@@ -9,7 +9,7 @@ const NavBar = () => {
       style={{ backgroundImage: `url(${backImg})` }}
     >
       <div className="navBar flex justify-evenly items-center" id="home">
-        <div className="iconD ml-1">
+        <div className="iconD ml-2">
           <ol className="flex items-center space-x-4">
             <li className="flex items-center">
               Home
@@ -29,8 +29,11 @@ const NavBar = () => {
             </li>
           </ol>
         </div>
-        <img src={logoCenter} alt="Logo Center" className="w-14 h-auto" />
-        <div className="iconI">
+        <div className="flex">
+          <img src={logoCenter} alt="Logo Center" className="w-10 " />
+        </div>
+        
+        <div className="iconI mr-2">
           <ol className="flex items-center space-x-4">
             <li className="flex items-center">
               Contacto

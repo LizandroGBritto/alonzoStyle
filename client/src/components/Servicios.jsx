@@ -13,14 +13,14 @@ const Servivcios = () => {
         </h3>
         <div className="servicios-container flex mt-8 justify-evenly items-center">
           <div className="flex-col">
-            <img src={img1} className="rounded-lg w-52" alt="" />
+            <img src={img1} className="rounded-lg w-48" alt="" />
             <h3 className="flex justify-center mt-8">TE CUIDAMOS</h3>
             <h3 className="flex justify-center mb-8 text-[#FF7D00]">
               Y CUIDAMOS
               <br />
               TU IMAGEN
             </h3>
-            <img src={img3} className="rounded-lg w-52" alt="" />
+            <img src={img3} className="rounded-lg w-48" alt="" />
           </div>
           <div className="flex-col justify-around items-center">
             <h3 className="flex justify-center mt-8">ENCONTRAMOS</h3>
@@ -29,7 +29,7 @@ const Servivcios = () => {
               <br />
               SE ADAPTE A TI
             </h3>
-            <img src={img2} className="rounded-lg w-52" alt="" />
+            <img src={img2} className="rounded-lg w-48" alt="" />
             <h3 className="flex justify-center mt-8">SERVICIOS DE</h3>
             <h3 className="flex justify-center mb-8 text-[#FF7D00]">
               CALIDAD CON

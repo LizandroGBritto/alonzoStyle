@@ -6,12 +6,12 @@ const AgendaRouter = express.Router();
 
 AgendaRouter.get("/", AgendaController.getAllAgendas);
 
-AgendaRouter.get("/:id", authenticate, AgendaController.getOneAgenda);
+AgendaRouter.get("/:id", AgendaController.getOneAgenda);
 
 AgendaRouter.post("/new", AgendaController.createAgenda);
 
-AgendaRouter.put("/:id", authenticate, AgendaController.updateOneAgendaById);
+AgendaRouter.put("/:id", AgendaController.updateOneAgendaById);
 
-AgendaRouter.delete("/:id", authenticate, AgendaController.deleteOneAgendaById);
+AgendaRouter.delete("/:id", AgendaController.deleteOneAgendaById);
 
 module.exports = AgendaRouter;

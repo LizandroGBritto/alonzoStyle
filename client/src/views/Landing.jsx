@@ -1,16 +1,25 @@
 import Agenda from "../components/Agenda"
+import Footer from "../components/Footer"
 import NavBar from "../components/NavBar"
-import Servivcios from "../components/Servivcios"
+import Servivcios from "../components/Servicios"
 import { useState } from 'react'
+
 const Landing = () => {
   const [horarios, setHorarios] = useState([])
+ 
+
 
 
   return (
     <>
-    <NavBar/>
-    <Servivcios/>
-    <Agenda horarios = {horarios} setHorarios = {setHorarios}/>
+    <div>
+      <NavBar/>
+      <div className="">
+        <Servivcios/>
+        <Agenda horarios = {horarios} setHorarios = {setHorarios}/>
+        <Footer/>
+      </div>
+    </div>
     </>
   )
 }
