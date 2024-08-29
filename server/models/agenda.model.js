@@ -11,6 +11,9 @@ const AgendaSchema = new mongoose.Schema({
   },
   NumeroCliente: {
     type: String
+  },
+  UserId: {
+    type: String
   }
 }, { timestamps: true });
 

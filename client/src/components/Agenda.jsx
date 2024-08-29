@@ -1,13 +1,14 @@
 import axios from "axios";
-import Swal from "sweetalert2";
 import { useState, useEffect } from "react";
 import { Button, Modal } from "flowbite-react";
 import FormAgendar from "./FormAgendar";
 
-const Agenda = ({ horarios, setHorarios }) => {
+const Agenda = ({ horarios, setHorarios, getUserId, agendarRef }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [openModal, setOpenModal] = useState(false);
   const [selectedId, setSelectedId] = useState(null); // Nuevo estado para almacenar el ID seleccionado
+
+  const UserId = getUserId();
 
   function onCloseModal() {
     setOpenModal(false);
@@ -48,7 +49,7 @@ const Agenda = ({ horarios, setHorarios }) => {
 
   return (
     <>
-      <div>
+      <div ref={agendarRef} id="agendar">
         <h3 className="flex justify-center mt-8 ml-8 mr-8 border-b-2 border-gray-300 pb-2">
           AGENDA
         </h3>
@@ -61,15 +62,35 @@ const Agenda = ({ horarios, setHorarios }) => {
             key={agenda._id}
           >
             <h3 className="flex justify-start">{agenda.Hora} </h3>
-            <Button
-              className="flex justify-center mr-4 bg-white rounded-lg text-black text-lg items-center"
+
+            {agenda.NombreCliente !== "" ? (
+              <h3 className="flex justify-center mr-4 text-[#FF7D00]">
+                {agenda.UserId == UserId ? (
+              <Button
+              className="flex justify-center  bg-orange-500 rounded-lg text-black text-lg items-center"
               onClick={() => {
                 setSelectedId(agenda._id); // Establecemos el ID de la agenda seleccionada
                 setOpenModal(true);
               }}
             >
-              AGENDAR
+              MODIFICAR
             </Button>
+            )  : (<Button disabled className="flex justify-center bg-gray-400 rounded-lg text-black text-lg items-center">
+              RESERVADO
+            </Button>)}
+              </h3>
+            ) : (
+              <Button
+                className="flex justify-center mr-4 bg-white rounded-lg text-black text-lg items-center"
+                onClick={() => {
+                  setSelectedId(agenda._id); // Establecemos el ID de la agenda seleccionada
+                  setOpenModal(true);
+                }}
+              >
+                AGENDAR
+              </Button>
+            )  
+            }
             <Modal
               className="flex justify-center items-center bg-black bg-opacity-15"
               show={openModal}
@@ -85,7 +106,7 @@ const Agenda = ({ horarios, setHorarios }) => {
                   </h3>
                   <div className="AgendarForm">
                     {/* Pasamos el ID y la función onCloseModal al componente FormAgendar */}
-                    <FormAgendar id={selectedId} onCloseModal={onCloseModal} refreshData={refreshData} />
+                    <FormAgendar id={selectedId} onCloseModal={onCloseModal} refreshData={refreshData} getUserId = {getUserId} />
                   </div>
                 </div>
               </Modal.Body>

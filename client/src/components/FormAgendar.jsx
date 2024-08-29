@@ -4,12 +4,20 @@ import axios from 'axios';
 import Swal from 'sweetalert2';
 import useForm from '../hooks/useForm';
 
-const FormAgendar = ({ id, onCloseModal, refreshData }) => {
+
+const FormAgendar = ({ id, onCloseModal, refreshData, getUserId }) => {
+  const IdUsuario = getUserId();
   const initialValues = {
     Hora: 'cargando...',
     NombreCliente: 'cargando...',
     NumeroCliente: 'cargando...',
+    UserId: IdUsuario
   };
+
+  console.log(initialValues);
+
+  
+  
 
   const { values: agenda, handleChange, setValues } = useForm(initialValues);
   const [error, setError] = useState('');
@@ -24,6 +32,7 @@ const FormAgendar = ({ id, onCloseModal, refreshData }) => {
               Hora: res.data.agenda.Hora || '',
               NombreCliente: res.data.agenda.NombreCliente || '',
               NumeroCliente: res.data.agenda.NumeroCliente || '',
+              UserId: IdUsuario
             });
           } else {
             setValues({
