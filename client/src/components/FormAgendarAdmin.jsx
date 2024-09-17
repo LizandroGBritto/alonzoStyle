@@ -4,7 +4,7 @@ import axios from 'axios';
 import Swal from 'sweetalert2';
 import useForm from '../hooks/useForm';
 
-const FormAgendar = ({ id, onCloseModal, refreshData, getUserId }) => {
+const FormAgendarAdmin = ({ id, onCloseModal, refreshData, getUserId }) => {
   const initialValues = {
     Hora: '',
     NombreCliente: '',
@@ -96,4 +96,4 @@ const FormAgendar = ({ id, onCloseModal, refreshData, getUserId }) => {
   );
 };
 
-export default FormAgendar;
+export default FormAgendarAdmin;

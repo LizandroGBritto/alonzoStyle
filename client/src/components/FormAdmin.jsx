@@ -3,7 +3,7 @@ import { Formik, Field, Form as FormikForm, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
 
-const Form = ({ handleSubmit, agenda, getUserId, error }) => {
+const FormAdmin = ({ handleSubmit, agenda, getUserId, error }) => {
   const [isCancelling, setIsCancelling] = useState(false);
 
   const validationSchema = Yup.object().shape({
@@ -55,7 +55,6 @@ const Form = ({ handleSubmit, agenda, getUserId, error }) => {
             values.NumeroCliente = '';
             values.UserId = '';
           } else {
-            values.UserId = getUserId();
             values.Hora = agenda.Hora;
           }
           handleSubmit(values);
@@ -128,4 +127,4 @@ const Form = ({ handleSubmit, agenda, getUserId, error }) => {
   );
 };
 
-export default Form;
+export default FormAdmin;

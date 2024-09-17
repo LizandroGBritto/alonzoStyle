@@ -19,16 +19,8 @@ const NavBar = ({agendarRef}) => {
       <div className="navBar flex justify-evenly items-center" id="home">
         <div className="iconD ml-2">
           <ol className="flex items-center space-x-4">
-            <li className="flex items-center">
-              Home
-              <img
-                src={DownButton}
-                alt="Down Button"
-                className="ml-1 w-4 h-4"
-              />
-            </li>
-            <li className="flex items-center">
-              Servicios
+          <li className="flex items-center">
+              Contactame
               <img
                 src={DownButton}
                 alt="Down Button"
@@ -44,15 +36,7 @@ const NavBar = ({agendarRef}) => {
         <div className="iconI mr-2">
           <ol className="flex items-center space-x-4">
             <li className="flex items-center">
-              Contacto
-              <img
-                src={DownButton}
-                alt="Down Button"
-                className="ml-1 w-4 h-4"
-              />
-            </li>
-            <li className="flex items-center">
-              Ubicacion
+              Ubicación
               <img
                 src={DownButton}
                 alt="Down Button"
@@ -63,7 +47,7 @@ const NavBar = ({agendarRef}) => {
         </div>
       </div>
       <div className="flex items-center flex-col mt-48 bg-black bg-opacity-50 p-6">
-        <h2 className="text-5xl ">ALONZO STYLE</h2>
+        <h2 className="text-4xl tracking-[0.05em] ">ALONZO STYLE</h2>
         <h3 className="tracking-[0.5em] mt-2 mb-2">CREANDO TU ESTILO</h3>
         <button className="bg-[#FF7D00] text-white py-2 px-4 rounded-md transition duration-300 ease-in-out transform hover:bg-orange-600 hover:scale-105"  onClick={scrollToAgendar}>
           RESERVAR TURNO

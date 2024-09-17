@@ -1,10 +1,10 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Button, Modal } from "flowbite-react";
-import FormAgendar from "./FormAgendar";
+import FormAgendarAdmin from "./FormAgendarAdmin";
 import { GoArrowSwitch } from "react-icons/go";
 
-const Agenda = ({ horarios, setHorarios, getUserId, agendarRef }) => {
+const AgendaAdmin = ({ horarios, setHorarios, getUserId, agendarRef }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [openModal, setOpenModal] = useState(false);
   const [selectedId, setSelectedId] = useState(null);
@@ -48,7 +48,6 @@ const Agenda = ({ horarios, setHorarios, getUserId, agendarRef }) => {
         const hasReservation = res.data.agendas.some(
           (agenda) => agenda.UserId === UserId
         );
-        setUserHasReservation(hasReservation);
       })
       .catch((err) => {
         console.log(err);
@@ -90,21 +89,31 @@ const Agenda = ({ horarios, setHorarios, getUserId, agendarRef }) => {
             className="flex justify-between border-b-2 border-gray-300 pb-2 pl-4 mt-8 ml-8 mr-8"
             key={agenda._id}
           >
-            <h3 className="flex justify-start">{agenda.Hora} </h3>
-          {diaHoy === 'DOMINGO' ? (
-            <h3 className="flex justify-center mr-4 text-[#FF7D00]">
-              <Button
-                disabled
-                className="flex justify-center bg-gray-400 rounded-lg text-black text-lg items-center"
-              >
-                CERRADO
-              </Button>
-            </h3>
-          ) : agenda.NombreCliente !== "" ? (
-            <h3 className="flex justify-center mr-4 text-[#FF7D00]">
-              {agenda.UserId === UserId ? (
+            <div className="flex-col">
+              <h3 className="flex justify-start">{agenda.Hora} </h3>
+              <h3 className="flex justify-start">
+                {agenda.NombreCliente == ""
+                  ? "Sin Cliente"
+                  : agenda.NombreCliente}
+              </h3>
+              <h3 className="flex justify-start">
+                {agenda.NumeroCliente == "" ? null : agenda.NumeroCliente}
+              </h3>
+            </div>
+
+            {diaHoy === "DOMINGO" ? (
+              <h3 className="flex justify-center mr-4 text-[#FF7D00]">
                 <Button
-                  className="flex justify-center bg-orange-500 rounded-lg text-black text-lg items-center"
+                  disabled
+                  className="flex justify-center bg-gray-400 rounded-lg text-black text-lg items-center"
+                >
+                  CERRADO
+                </Button>
+              </h3>
+            ) : agenda.NombreCliente !== "" ? (
+              <h3 className="flex-col justify-center mr-4 text-[#FF7D00]">
+                <Button
+                  className="flex mb-1 justify-center bg-orange-500 rounded-lg text-black text-lg items-center"
                   onClick={() => {
                     setSelectedId(agenda._id);
                     setOpenModal(true);
@@ -112,28 +121,48 @@ const Agenda = ({ horarios, setHorarios, getUserId, agendarRef }) => {
                 >
                   MODIFICAR
                 </Button>
-              ) : (
                 <Button
-                  disabled
-                  className="flex justify-center bg-gray-400 rounded-lg text-black text-lg items-center"
+                  className="flex justify-center bg-green-400 rounded-lg text-black text-lg items-center"
+                  onClick={() => {
+                    setSelectedId(agenda._id);
+                    setOpenModal(true);
+                  }}
                 >
-                  RESERVADO
+                  CONTACTAR
                 </Button>
-              )}
-            </h3>
-          ) : (
-            <Button
-              disabled={userHasReservation && agenda.UserId !== UserId}
-              className="flex justify-center mr-6 bg-white rounded-lg text-black text-lg items-center"
-              onClick={() => {
-                setSelectedId(agenda._id);
-                setOpenModal(true);
-              }}
-            >
-              AGENDAR
-            </Button>
-          )}
-           
+              </h3>
+            ) : (
+              <h3 className="flex-col justify-center mr-6 text-[#FF7D00]">
+                <Button
+                  className="flex justify-center mr-6 mb-1 bg-white rounded-lg text-black text-lg items-center"
+                  onClick={() => {
+                    setSelectedId(agenda._id);
+                    setOpenModal(true);
+                  }}
+                >
+                  VER
+                </Button>
+                <Button
+                    className="flex justify-center mr-6 bg-white rounded-lg text-black text-lg items-center"
+                    onClick={() => {    
+                        axios
+                        .put(`http://localhost:8000/api/agenda/${agenda._id}`, {
+                            UserId: "123",
+                            NombreCliente: "",
+                            NumeroCliente: "",
+                        })
+                        .then((res) => {
+                            refreshData();
+                        })
+                        .catch((err) => {
+                            console.log(err);
+                        });
+                    }}
+                >
+                    Desactivar
+                </Button>
+              </h3>
+            )}
 
             <Modal
               className="flex justify-center items-center bg-black bg-opacity-15"
@@ -149,7 +178,7 @@ const Agenda = ({ horarios, setHorarios, getUserId, agendarRef }) => {
                     Datos para la reserva
                   </h3>
                   <div className="AgendarForm">
-                    <FormAgendar
+                    <FormAgendarAdmin
                       id={selectedId}
                       onCloseModal={onCloseModal}
                       refreshData={refreshData}
@@ -166,4 +195,4 @@ const Agenda = ({ horarios, setHorarios, getUserId, agendarRef }) => {
   );
 };
 
-export default Agenda;
+export default AgendaAdmin;

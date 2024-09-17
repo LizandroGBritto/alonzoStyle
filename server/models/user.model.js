@@ -33,9 +33,6 @@ UserSchema.pre('save', function (next) {
         });
 });
 
-
 UserSchema.plugin(uniqueValidator, { message: 'Error, expected {PATH} to be unique.' });
-
-
 
 module.exports.UserModel = mongoose.model('User', UserSchema);

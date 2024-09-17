@@ -12,6 +12,9 @@ const AgendaSchema = new mongoose.Schema({
   NumeroCliente: {
     type: String
   },
+  Dia: {
+    type: String
+  },
   UserId: {
     type: String
   }
