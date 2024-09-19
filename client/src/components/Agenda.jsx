@@ -90,50 +90,61 @@ const Agenda = ({ horarios, setHorarios, getUserId, agendarRef }) => {
             className="flex justify-between border-b-2 border-gray-300 pb-2 pl-4 mt-8 ml-8 mr-8"
             key={agenda._id}
           >
-            <h3 className="flex justify-start">{agenda.Hora} </h3>
-          {diaHoy === 'DOMINGO' ? (
-            <h3 className="flex justify-center mr-4 text-[#FF7D00]">
-              <Button
-                disabled
-                className="flex justify-center bg-gray-400 rounded-lg text-black text-lg items-center"
-              >
-                CERRADO
-              </Button>
+            <h3
+              className={`flex justify-start ${
+                agenda.UserId !== "" ? "line-through" : ""
+              }`}
+            >
+              {agenda.Hora}
             </h3>
-          ) : agenda.NombreCliente !== "" ? (
-            <h3 className="flex justify-center mr-4 text-[#FF7D00]">
-              {agenda.UserId === UserId ? (
-                <Button
-                  className="flex justify-center bg-orange-500 rounded-lg text-black text-lg items-center"
-                  onClick={() => {
-                    setSelectedId(agenda._id);
-                    setOpenModal(true);
-                  }}
-                >
-                  MODIFICAR
-                </Button>
-              ) : (
+            {diaHoy === "DOMINGO" ? (
+              <h3 className="flex justify-center mr-4 text-[#FF7D00]">
                 <Button
                   disabled
                   className="flex justify-center bg-gray-400 rounded-lg text-black text-lg items-center"
                 >
-                  RESERVADO
+                  CERRADO
                 </Button>
-              )}
-            </h3>
-          ) : (
-            <Button
-              disabled={userHasReservation && agenda.UserId !== UserId}
-              className="flex justify-center mr-6 bg-white rounded-lg text-black text-lg items-center"
-              onClick={() => {
-                setSelectedId(agenda._id);
-                setOpenModal(true);
-              }}
-            >
-              AGENDAR
-            </Button>
-          )}
-           
+              </h3>
+            ) : agenda.NombreCliente !== "" ? (
+              <h3 className="flex justify-center mr-4 text-[#FF7D00]">
+                {agenda.UserId === UserId ? (
+                  <Button
+                    className="flex justify-center bg-orange-500 rounded-lg text-black text-lg items-center"
+                    onClick={() => {
+                      setSelectedId(agenda._id);
+                      setOpenModal(true);
+                    }}
+                  >
+                    MODIFICAR
+                  </Button>
+                ) : (
+                  <Button
+                    disabled
+                    className="flex justify-center bg-gray-400 rounded-lg text-black text-lg items-center"
+                  >
+                    RESERVADO
+                  </Button>
+                )}
+              </h3>
+            ) : (
+              <Button
+                // Si el UserId es "Reservado", el botón cambia a "RESERVADO" y se deshabilita
+                disabled={
+                  agenda.UserId === "Reservado" ||
+                  (userHasReservation && agenda.UserId !== UserId)
+                }
+                className={`flex justify-center mr-6 ${
+                  agenda.UserId === "Reservado" ? "bg-gray-400" : "bg-white"
+                } rounded-lg text-black text-lg items-center`}
+                onClick={() => {
+                  setSelectedId(agenda._id);
+                  setOpenModal(true);
+                }}
+              >
+                {agenda.UserId === "Reservado" ? "RESERVADO" : "AGENDAR"}
+              </Button>
+            )}
 
             <Modal
               className="flex justify-center items-center bg-black bg-opacity-15"

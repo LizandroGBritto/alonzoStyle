@@ -124,8 +124,21 @@ const AgendaAdmin = ({ horarios, setHorarios, getUserId, agendarRef }) => {
                 <Button
                   className="flex justify-center bg-green-400 rounded-lg text-black text-lg items-center"
                   onClick={() => {
-                    setSelectedId(agenda._id);
-                    setOpenModal(true);
+                    let phoneNumber = agenda.NumeroCliente; // Número de teléfono del cliente
+
+                    // Si el número comienza con "0", lo reemplazamos por el código de país "595"
+                    if (phoneNumber.startsWith("0")) {
+                      phoneNumber = `595${phoneNumber.slice(1)}`; // Reemplaza el 0 inicial por el código de país
+                    }
+
+                    const clientName = agenda.NombreCliente; // Nombre del cliente
+                    const appointmentTime = agenda.Hora; // Hora del turno, si está disponible
+                    const message = `Hola ${clientName}, tienes un turno a las ${appointmentTime}, ¡te esperamos!`;
+                    const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
+                      message
+                    )}`;
+
+                    window.open(whatsappURL, "_blank"); // Abre el enlace en una nueva pestaña
                   }}
                 >
                   CONTACTAR
@@ -142,25 +155,58 @@ const AgendaAdmin = ({ horarios, setHorarios, getUserId, agendarRef }) => {
                 >
                   VER
                 </Button>
-                <Button
-                    className="flex justify-center mr-6 bg-white rounded-lg text-black text-lg items-center"
-                    onClick={() => {    
+                <label className="inline-flex items-center cursor-pointer">
+                  <input
+                    type="checkbox"
+                    value=""
+                    className="sr-only peer"
+                    // Controlar el estado del checkbox según si el UserId es "Reservado"
+                    checked={agenda.UserId === "Reservado"}
+                    onChange={(e) => {
+                      if (e.target.checked) {
+                        // Si se checkea, cambiar el estado a "Reservado"
                         axios
-                        .put(`http://localhost:8000/api/agenda/${agenda._id}`, {
-                            UserId: "123",
-                            NombreCliente: "",
-                            NumeroCliente: "",
-                        })
-                        .then((res) => {
+                          .put(
+                            `http://localhost:8000/api/agenda/${agenda._id}`,
+                            {
+                              NombreCliente: "",
+                              NumeroCliente: "",
+                              UserId: "Reservado",
+                            }
+                          )
+                          .then((res) => {
+                            console.log(res);
                             refreshData();
-                        })
-                        .catch((err) => {
+                          })
+                          .catch((err) => {
                             console.log(err);
-                        });
+                          });
+                      } else {
+                        // Si se descheckea, enviar el UserId como vacío
+                        axios
+                          .put(
+                            `http://localhost:8000/api/agenda/${agenda._id}`,
+                            {
+                              NombreCliente: "",
+                              NumeroCliente: "",
+                              UserId: "",
+                            }
+                          )
+                          .then((res) => {
+                            console.log(res);
+                            refreshData();
+                          })
+                          .catch((err) => {
+                            console.log(err);
+                          });
+                      }
                     }}
-                >
-                    Desactivar
-                </Button>
+                  />
+                  <div className="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                  <span className="ms-3 text-sm font-medium text-white dark:text-gray-300 w-14">
+                    {agenda.UserId === "Reservado" ? "LIBERAR" : "RESERVAR"}
+                  </span>
+                </label>
               </h3>
             )}
 
