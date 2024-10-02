@@ -1,0 +1,1190 @@
+[{
+  "_id": {
+    "$oid": "66fbfd3d8e3b1b3799d15da4"
+  },
+  "Hora": "09:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Jueves",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:46:37.723Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:46:37.723Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbfd448e3b1b3799d15da6"
+  },
+  "Hora": "09:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Viernes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:46:44.364Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:46:44.364Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbfd588e3b1b3799d15da8"
+  },
+  "Hora": "09:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Sabado",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:47:04.335Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:47:04.335Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbff668e3b1b3799d15daa"
+  },
+  "Hora": "09:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Domingo",
+  "UserId": "Reservado",
+  "createdAt": {
+    "$date": "2024-10-01T13:55:50.235Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:55:50.235Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbff6e8e3b1b3799d15dac"
+  },
+  "Hora": "10:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Domingo",
+  "UserId": "Reservado",
+  "createdAt": {
+    "$date": "2024-10-01T13:55:58.279Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:55:58.279Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbff7b8e3b1b3799d15dae"
+  },
+  "Hora": "10:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Lunes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:56:11.450Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:56:11.450Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbff808e3b1b3799d15db0"
+  },
+  "Hora": "11:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Lunes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:56:16.260Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:56:16.260Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbff8b8e3b1b3799d15db2"
+  },
+  "Hora": "13:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Lunes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:56:27.025Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:56:27.025Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbff8e8e3b1b3799d15db4"
+  },
+  "Hora": "14:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Lunes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:56:30.385Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:56:30.385Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbff928e3b1b3799d15db6"
+  },
+  "Hora": "15:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Lunes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:56:34.849Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:56:34.849Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbff968e3b1b3799d15db8"
+  },
+  "Hora": "16:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Lunes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:56:38.202Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:56:38.202Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbff998e3b1b3799d15dba"
+  },
+  "Hora": "17:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Lunes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:56:41.789Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:56:41.789Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbff9f8e3b1b3799d15dbc"
+  },
+  "Hora": "18:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Lunes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:56:47.465Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:56:47.465Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbffa28e3b1b3799d15dbe"
+  },
+  "Hora": "19:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Lunes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:56:50.970Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:56:50.970Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbffad8e3b1b3799d15dc0"
+  },
+  "Hora": "10:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Martes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:57:01.902Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:40:45.066Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbffc68e3b1b3799d15dc2"
+  },
+  "Hora": "11:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Martes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:57:26.141Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:57:26.141Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbffcc8e3b1b3799d15dc4"
+  },
+  "Hora": "13:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Martes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:57:32.059Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:57:32.059Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbffd28e3b1b3799d15dc6"
+  },
+  "Hora": "14:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Martes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:57:38.996Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:57:38.996Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbffd78e3b1b3799d15dc8"
+  },
+  "Hora": "15:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Martes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:57:43.047Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:57:43.047Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbffdb8e3b1b3799d15dca"
+  },
+  "Hora": "16:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Martes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:57:47.010Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:57:47.010Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbffde8e3b1b3799d15dcc"
+  },
+  "Hora": "17:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Martes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:57:50.843Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:57:50.843Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbffe28e3b1b3799d15dce"
+  },
+  "Hora": "18:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Martes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:57:54.972Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:57:54.972Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbffe88e3b1b3799d15dd0"
+  },
+  "Hora": "19:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Martes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:58:00.172Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:58:00.172Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbfff48e3b1b3799d15dd2"
+  },
+  "Hora": "10:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Miercoles",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:58:12.196Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:58:12.196Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbfff78e3b1b3799d15dd4"
+  },
+  "Hora": "11:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Miercoles",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:58:15.752Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:58:15.752Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbfffb8e3b1b3799d15dd6"
+  },
+  "Hora": "13:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Miercoles",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:58:19.339Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:58:19.339Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fbfffe8e3b1b3799d15dd8"
+  },
+  "Hora": "14:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Miercoles",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:58:22.444Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:58:22.444Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00018e3b1b3799d15dda"
+  },
+  "Hora": "15:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Miercoles",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:58:25.965Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:58:25.965Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00068e3b1b3799d15ddc"
+  },
+  "Hora": "16:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Miercoles",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:58:30.036Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:58:30.036Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00098e3b1b3799d15dde"
+  },
+  "Hora": "17:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Miercoles",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:58:33.164Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:58:33.164Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc000d8e3b1b3799d15de0"
+  },
+  "Hora": "18:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Miercoles",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:58:37.230Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:58:37.230Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00148e3b1b3799d15de2"
+  },
+  "Hora": "19:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Miercoles",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T13:58:44.246Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T13:58:44.246Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00628e3b1b3799d15de5"
+  },
+  "Hora": "10:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Jueves",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:00:02.745Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:00:02.745Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00668e3b1b3799d15de7"
+  },
+  "Hora": "11:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Jueves",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:00:06.767Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:00:06.767Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00698e3b1b3799d15de9"
+  },
+  "Hora": "13:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Jueves",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:00:09.935Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:00:09.935Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc006d8e3b1b3799d15deb"
+  },
+  "Hora": "14:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Jueves",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:00:13.151Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:00:13.151Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00708e3b1b3799d15ded"
+  },
+  "Hora": "15:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Jueves",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:00:16.159Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:00:16.159Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00738e3b1b3799d15def"
+  },
+  "Hora": "16:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Jueves",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:00:19.375Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:00:19.375Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00768e3b1b3799d15df1"
+  },
+  "Hora": "17:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Jueves",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:00:22.366Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:00:22.366Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00798e3b1b3799d15df3"
+  },
+  "Hora": "18:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Jueves",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:00:25.903Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:00:25.903Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00828e3b1b3799d15df5"
+  },
+  "Hora": "19:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Jueves",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:00:34.457Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:00:34.457Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc008b8e3b1b3799d15df7"
+  },
+  "Hora": "10:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Viernes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:00:43.464Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:00:43.464Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00908e3b1b3799d15df9"
+  },
+  "Hora": "11:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Viernes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:00:48.223Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:00:48.223Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00bb8e3b1b3799d15dfe"
+  },
+  "Hora": "13:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Viernes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:01:31.090Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:01:31.090Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00bf8e3b1b3799d15e00"
+  },
+  "Hora": "14:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Viernes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:01:35.409Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:01:35.409Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00c38e3b1b3799d15e02"
+  },
+  "Hora": "15:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Viernes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:01:39.825Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:01:39.825Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00c78e3b1b3799d15e04"
+  },
+  "Hora": "16:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Viernes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:01:43.081Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:01:43.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00ca8e3b1b3799d15e06"
+  },
+  "Hora": "17:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Viernes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:01:46.386Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:01:46.386Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00cd8e3b1b3799d15e08"
+  },
+  "Hora": "18:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Viernes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:01:49.489Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:01:49.489Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00d18e3b1b3799d15e0a"
+  },
+  "Hora": "19:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Viernes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:01:53.058Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:01:53.058Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00e28e3b1b3799d15e0c"
+  },
+  "Hora": "10:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Sabado",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:02:10.611Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:02:10.611Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00ec8e3b1b3799d15e0e"
+  },
+  "Hora": "11:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Sabado",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:02:20.444Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:02:20.444Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00f08e3b1b3799d15e10"
+  },
+  "Hora": "13:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Sabado",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:02:24.650Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:02:24.650Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00f38e3b1b3799d15e12"
+  },
+  "Hora": "14:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Sabado",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:02:27.882Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:02:27.882Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00f68e3b1b3799d15e14"
+  },
+  "Hora": "15:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Sabado",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:02:30.771Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:02:30.771Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00fa8e3b1b3799d15e16"
+  },
+  "Hora": "16:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Sabado",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:02:34.370Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:02:34.370Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc00fd8e3b1b3799d15e18"
+  },
+  "Hora": "17:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Sabado",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:02:37.739Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:02:37.739Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc01008e3b1b3799d15e1a"
+  },
+  "Hora": "18:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Sabado",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:02:40.786Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:02:40.786Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc01048e3b1b3799d15e1c"
+  },
+  "Hora": "19:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Sabado",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-01T14:02:44.954Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:02:44.954Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc01158e3b1b3799d15e1e"
+  },
+  "Hora": "11:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Domingo",
+  "UserId": "Reservado",
+  "createdAt": {
+    "$date": "2024-10-01T14:03:01.395Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:03:01.395Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc01188e3b1b3799d15e20"
+  },
+  "Hora": "13:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Domingo",
+  "UserId": "Reservado",
+  "createdAt": {
+    "$date": "2024-10-01T14:03:04.932Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:03:04.932Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc011d8e3b1b3799d15e22"
+  },
+  "Hora": "14:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Domingo",
+  "UserId": "Reservado",
+  "createdAt": {
+    "$date": "2024-10-01T14:03:09.731Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:03:09.731Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc01238e3b1b3799d15e24"
+  },
+  "Hora": "15:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Domingo",
+  "UserId": "Reservado",
+  "createdAt": {
+    "$date": "2024-10-01T14:03:15.788Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:03:15.788Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc01278e3b1b3799d15e26"
+  },
+  "Hora": "16:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Domingo",
+  "UserId": "Reservado",
+  "createdAt": {
+    "$date": "2024-10-01T14:03:19.093Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:03:19.093Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc012a8e3b1b3799d15e28"
+  },
+  "Hora": "17:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Domingo",
+  "UserId": "Reservado",
+  "createdAt": {
+    "$date": "2024-10-01T14:03:22.556Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:03:22.556Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc012d8e3b1b3799d15e2a"
+  },
+  "Hora": "18:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Domingo",
+  "UserId": "Reservado",
+  "createdAt": {
+    "$date": "2024-10-01T14:03:25.868Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:03:25.868Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc01318e3b1b3799d15e2c"
+  },
+  "Hora": "19:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Domingo",
+  "UserId": "Reservado",
+  "createdAt": {
+    "$date": "2024-10-01T14:03:29.380Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T14:03:29.380Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc918b47bd15be0d51aa7f"
+  },
+  "Hora": "09:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Martes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-02T00:19:23.399Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-02T00:33:54.999Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc94d247bd15be0d51aa8c"
+  },
+  "Hora": "09:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Miercoles",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-02T00:33:22.512Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-02T00:33:22.512Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fc94d947bd15be0d51aa8e"
+  },
+  "Hora": "09:00",
+  "NombreCliente": "",
+  "NumeroCliente": "",
+  "Dia": "Lunes",
+  "UserId": "",
+  "createdAt": {
+    "$date": "2024-10-02T00:33:29.255Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-02T00:33:29.255Z"
+  },
+  "__v": 0
+}]

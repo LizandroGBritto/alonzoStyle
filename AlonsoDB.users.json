@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "66bca210ed36f062563a84f2"
+  },
+  "userName": "Lizandro",
+  "password": "$2b$10$db7hGmrOcpgTlVKThprGiO9LsM3q3ApSzF3QOQU6O2SjbhtaGdCtW",
+  "createdAt": {
+    "$date": "2024-08-14T12:24:48.327Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-14T12:24:48.327Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e21ffb3016bc3c12432661"
+  },
+  "userName": "Lizandro",
+  "password": "$2b$10$Z8vpD/n5Oas.I3H8PMjT.u7MijTcT76YIClLg2p.QQdSB12bVNfbm",
+  "createdAt": {
+    "$date": "2024-09-11T22:55:55.694Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-11T22:55:55.694Z"
+  },
+  "__v": 0
+}]
