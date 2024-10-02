@@ -8,17 +8,16 @@ const AgendaAdmin = ({ horarios, setHorarios, getUserId, agendarRef }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [openModal, setOpenModal] = useState(false);
   const [selectedId, setSelectedId] = useState(null);
-  const [userHasReservation, setUserHasReservation] = useState(false);
   const [mostrarManana, setMostrarManana] = useState(false); // Estado para alternar entre hoy y mañana
 
   const diasSemana = [
-    "DOMINGO",
-    "LUNES",
-    "MARTES",
-    "MIERCOLES",
-    "JUEVES",
-    "VIERNES",
-    "SÁBADO",
+    "Domingo",
+    "Lunes",
+    "Martes",
+    "Miercoles",
+    "Jueves",
+    "Viernes",
+    "Sabado",
   ];
 
   // Día de hoy
@@ -30,12 +29,12 @@ const AgendaAdmin = ({ horarios, setHorarios, getUserId, agendarRef }) => {
   manana.setDate(hoy.getDate() + 1);
   const diaManana = diasSemana[manana.getDay()];
 
-  const UserId = getUserId();
 
   function onCloseModal() {
     setOpenModal(false);
     setSelectedId(null);
   }
+  
 
   function refreshData() {
     axios
@@ -44,10 +43,6 @@ const AgendaAdmin = ({ horarios, setHorarios, getUserId, agendarRef }) => {
         setHorarios(res.data.agendas);
         setIsLoading(false);
         console.log(res);
-
-        const hasReservation = res.data.agendas.some(
-          (agenda) => agenda.UserId === UserId
-        );
       })
       .catch((err) => {
         console.log(err);
@@ -62,9 +57,13 @@ const AgendaAdmin = ({ horarios, setHorarios, getUserId, agendarRef }) => {
   if (isLoading) return <h1>Loading...</h1>;
 
   // Filtrar los horarios dependiendo de si se muestran los de hoy o mañana
-  const horariosFiltrados = horarios.filter((agenda) =>
-    mostrarManana ? agenda.Dia === "Manana" : agenda.Dia === "Hoy"
-  );
+  const horariosFiltrados = horarios
+    .filter((agenda) => (mostrarManana ? agenda.Dia === diaManana : agenda.Dia === diaHoy))
+    .sort((a, b) => {
+      const horaA = parseInt(a.Hora.replace(":", ""), 10);
+      const horaB = parseInt(b.Hora.replace(":", ""), 10);
+      return horaA - horaB; // Orden Ascendente
+    });
 
   return (
     <>
@@ -101,7 +100,7 @@ const AgendaAdmin = ({ horarios, setHorarios, getUserId, agendarRef }) => {
               </h3>
             </div>
 
-            {diaHoy === "DOMINGO" ? (
+            {diaHoy === "Domingo" ? (
               <h3 className="flex justify-center mr-4 text-[#FF7D00]">
                 <Button
                   disabled

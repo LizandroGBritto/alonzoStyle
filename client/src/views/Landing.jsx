@@ -1,15 +1,14 @@
-import Agenda from "../components/Agenda"
-import Footer from "../components/Footer"
-import NavBar from "../components/NavBar"
-import Servivcios from "../components/Servicios"
-import { useState, useEffect, useRef } from 'react'
+import Agenda from "../components/Agenda";
+import Footer from "../components/Footer";
+import NavBar from "../components/NavBar";
+import Servivcios from "../components/Servicios";
+import { useState, useEffect, useRef } from "react";
 
 const Landing = () => {
-  const [horarios, setHorarios] = useState([])
-
+  const [horarios, setHorarios] = useState([]);
   const agendarRef = useRef(null);
- 
-  
+  const footerRef = useRef(null);
+
   const generateUUID = () => {
     return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
       const r = (Math.random() * 16) | 0;
@@ -18,37 +17,30 @@ const Landing = () => {
     });
   };
 
-  // Función para obtener o crear un userId único
   const getUserId = () => {
-    let userId = localStorage.getItem('userId');
+    let userId = localStorage.getItem("userId");
     if (!userId) {
-      userId = generateUUID();  // Si no existe, genera un nuevo UUID
-      localStorage.setItem('userId', userId);
+      userId = generateUUID();
+      localStorage.setItem("userId", userId);
     }
     return userId;
   };
 
-  // useEffect para ejecutar la función cuando el componente se monte
   useEffect(() => {
     const userId = getUserId();
-    console.log('User ID:', userId); // Verificación del userId en la consola
-  }, []); // El array vacío asegura que esto se ejecute solo una vez
-
-
-  console.log(getUserId());
+    console.log("User ID:", userId);
+  }, []);
 
   return (
     <>
-    <div>
-      <NavBar agendarRef={agendarRef} />
-      <div className="">
-        <Servivcios/>
-        <Agenda horarios = {horarios} setHorarios = {setHorarios} getUserId = {getUserId} agendarRef={agendarRef} />
-        <Footer/>
+      <div>
+        <NavBar agendarRef={agendarRef} footerRef={footerRef} />
+        <Servivcios />
+        <Agenda horarios={horarios} setHorarios={setHorarios} getUserId={getUserId} agendarRef={agendarRef} />
+        <Footer footerRef={footerRef} />
       </div>
-    </div>
     </>
-  )
-}
+  );
+};
 
-export default Landing
+export default Landing;

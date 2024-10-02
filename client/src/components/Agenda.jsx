@@ -12,13 +12,13 @@ const Agenda = ({ horarios, setHorarios, getUserId, agendarRef }) => {
   const [mostrarManana, setMostrarManana] = useState(false); // Estado para alternar entre hoy y mañana
 
   const diasSemana = [
-    "DOMINGO",
-    "LUNES",
-    "MARTES",
-    "MIERCOLES",
-    "JUEVES",
-    "VIERNES",
-    "SÁBADO",
+    "Domingo",
+    "Lunes",
+    "Martes",
+    "Miercoles",
+    "Jueves",
+    "Viernes",
+    "Sabado",
   ];
 
   // Día de hoy
@@ -62,14 +62,18 @@ const Agenda = ({ horarios, setHorarios, getUserId, agendarRef }) => {
 
   if (isLoading) return <h1>Loading...</h1>;
 
-  // Filtrar los horarios dependiendo de si se muestran los de hoy o mañana
-  const horariosFiltrados = horarios.filter((agenda) =>
-    mostrarManana ? agenda.Dia === "Manana" : agenda.Dia === "Hoy"
-  );
+  // Filtrar los horarios dependiendo de si se muestran los de hoy o mañana y ordenarlos de mayor a menor
+  const horariosFiltrados = horarios
+    .filter((agenda) => (mostrarManana ? agenda.Dia === diaManana : agenda.Dia === diaHoy))
+    .sort((a, b) => {
+      const horaA = parseInt(a.Hora.replace(":", ""), 10);
+      const horaB = parseInt(b.Hora.replace(":", ""), 10);
+      return horaA - horaB; // Orden Ascendente
+    });
 
   return (
     <>
-      <div ref={agendarRef} id="agendar">
+      <div className="max-w-11/12 mx-auto" ref={agendarRef} id="agendar">
         <h3 className="flex justify-center mt-8 ml-8 mr-8 border-b-2 border-gray-300 pb-2">
           AGENDA
         </h3>
@@ -80,7 +84,7 @@ const Agenda = ({ horarios, setHorarios, getUserId, agendarRef }) => {
             className="flex justify-start mt-6 mr-8 mb-2 bg-black"
             onClick={() => setMostrarManana(!mostrarManana)} // Alternar entre hoy y mañana
           >
-            {mostrarManana ? `DÍA: ${diaManana}` : `DÍA: ${diaHoy}`}
+            {mostrarManana ? `Día: ${diaManana}` : `Día: ${diaHoy}`}
             <GoArrowSwitch className="mt-1 ml-1" />
           </Button>
         </div>
@@ -97,7 +101,7 @@ const Agenda = ({ horarios, setHorarios, getUserId, agendarRef }) => {
             >
               {agenda.Hora}
             </h3>
-            {diaHoy === "DOMINGO" ? (
+            {diaHoy === "Domingo" ? (
               <h3 className="flex justify-center mr-4 text-[#FF7D00]">
                 <Button
                   disabled

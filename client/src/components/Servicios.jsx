@@ -6,7 +6,7 @@ const Servivcios = () => {
     <>
       <div className="servicios-main">
         <h3
-          className="flex justify-center mt-8 ml-8 mr-8 border-b-2 border-gray-300 pb-2"
+          className="flex justify-center mt-5 ml-8 mr-8 border-b-2 border-gray-300 pb-2"
           id="servicios"
         >
           SERVICIOS
